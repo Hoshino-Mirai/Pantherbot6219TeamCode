@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\TeamCode\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "D:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\TeamCode\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\icon_robotcontroller.png",
+        "source": "D:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\icon_robotcontroller.png"
+    },
+    {
+        "merged": "D:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\TeamCode\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\icon_menu.png",
+        "source": "D:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\icon_menu.png"
+    }
+]

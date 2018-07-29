@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\TeamCode\\build\\intermediates\\res\\merged\\debug\\menu\\menu_server.xml",
+        "source": "C:\\Users\\KusakabeMirai\\.android\\build-cache\\54e728f00e619ec244de2b98ebbba927adbc5006\\output\\res\\menu\\menu_server.xml"
+    },
+    {
+        "merged": "D:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\TeamCode\\build\\intermediates\\res\\merged\\debug\\menu\\ftc_robot_controller.xml",
+        "source": "D:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\menu\\ftc_robot_controller.xml"
+    },
+    {
+        "merged": "D:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\TeamCode\\build\\intermediates\\res\\merged\\debug\\menu\\main_menu.xml",
+        "source": "C:\\Users\\KusakabeMirai\\.android\\build-cache\\1598cede441ef54807db6943ced6cfcde11191d9\\output\\res\\menu\\main_menu.xml"
+    }
+]

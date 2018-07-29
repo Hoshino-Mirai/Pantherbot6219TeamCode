@@ -1,0 +1,4 @@
+#Sat Feb 17 13:01:53 CST 2018
+base.0=D\:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\TeamCode\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=D\:\\KusakabeMirai\\Software\\AndroidStudio\\FTC\\ftc_app-master\\TeamCode\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
