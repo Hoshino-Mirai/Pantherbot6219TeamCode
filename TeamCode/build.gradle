@@ -16,7 +16,7 @@ repositories {
     jcenter()
 }
 dependencies {
-    implementation project(':OpenCV320')
+    implementation project(':openCVLibrary3')
     implementation project(':DogeCV')
     compile 'com.acmerobotics.roadrunner:core:0.2.0'
     compile 'com.acmerobotics.dashboard:dashboard:0.1.1'
