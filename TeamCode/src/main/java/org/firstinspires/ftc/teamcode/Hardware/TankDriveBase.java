@@ -433,8 +433,7 @@ public class TankDriveBase implements PIDController.PidInput {
     public void tankDrive(float leftPower, float rightPower) throws InterruptedException {
         leftPower = Range.clip(leftPower, -1, 1);
         rightPower = Range.clip(rightPower, -1, 1);
-        if(slowSpeed)
-        {
+        if(slowSpeed) {
             leftPower = (float) scalePowerSlow(leftPower);
             rightPower = (float) scalePowerSlow(rightPower);
         } else {

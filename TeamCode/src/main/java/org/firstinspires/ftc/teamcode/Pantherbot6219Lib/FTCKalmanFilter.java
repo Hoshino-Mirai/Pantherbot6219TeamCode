@@ -19,7 +19,6 @@ public class FTCKalmanFilter {
         this.instance = instance;
         this.kQ = kQ;
         this.kR = kR;
-
     }
 
     public FTCKalmanFilter(final String instance) {
@@ -37,10 +36,10 @@ public class FTCKalmanFilter {
             init = true;
         }
         double tempP = prevP + kQ;
-        double k = tempP/(tempP+kR);
-        double xEst = prevXEst + k*(data-prevXEst);
+        double k = tempP/(tempP + kR);
+        double xEst = prevXEst + k * (data - prevXEst);
 
-        prevP = (1 - k)*tempP;
+        prevP = (1 - k) * tempP;
         prevXEst = xEst;
 
         return prevXEst;

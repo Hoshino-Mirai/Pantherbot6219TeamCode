@@ -531,16 +531,13 @@ public class MecanumDriveBase implements PIDController.PidInput {
     }
 
     @Override
-    public double getInput(PIDController pidCtrl)
-    {
+    public double getInput(PIDController pidCtrl) {
         double input = 0.0;
-        if (pidCtrl == pidControl)
-        {
+        if (pidCtrl == pidControl) {
             input = (motorFL.getCurrentPosition() + motorBL.getCurrentPosition()
                     + motorFR.getCurrentPosition() + motorBR.getCurrentPosition()) * SCALE / 4.0;
         }
-        else if (pidCtrl == pidControlTurn)
-        {
+        else if (pidCtrl == pidControlTurn) {
             angles = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
             //input = gyro.getHeading();
             input = intZ();

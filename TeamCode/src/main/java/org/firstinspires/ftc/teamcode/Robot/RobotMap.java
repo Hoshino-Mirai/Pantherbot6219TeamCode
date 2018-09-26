@@ -16,7 +16,7 @@ public class RobotMap {
             leftIntake = "leftIn",
             rightIntake = "rightIn",
             slide = "slide",
-            lift= "lift";
+            climber= "climber";
     }
 
     public static class Servo{
