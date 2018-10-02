@@ -314,18 +314,15 @@ public class TankDriveBase implements PIDController.PidInput {
      *              robot. Conversely, turn radius r = -ln(curve)*w for a given value of curve and wheelbase w.
      * @param inverted specifies true to invert control (i.e. robot front becomes robot back).
      */
-    public void curve(double magnitude, double curve, boolean inverted, boolean gyroAssist)
-    {
+    public void curve(double magnitude, double curve, boolean inverted, boolean gyroAssist) {
         double leftOutput;
         double rightOutput;
         double sensitivity = 0.5;
 
-        if (curve < 0.0)
-        {
+        if (curve < 0.0) {
             double value = Math.log(-curve);
             double ratio = (value - sensitivity)/(value + sensitivity);
-            if (ratio == 0.0)
-            {
+            if (ratio == 0.0) {
                 ratio = 0.0000000001;
             }
             leftOutput = magnitude/ratio;
@@ -407,8 +404,7 @@ public class TankDriveBase implements PIDController.PidInput {
      *
      * @param seconds is the time in seconds to wait
      */
-    public void sleep(double seconds)
-    {
+    public void sleep(double seconds) {
         double startTime = HalUtil.getCurrentTime();
         while(startTime + seconds > HalUtil.getCurrentTime()) {}
     }

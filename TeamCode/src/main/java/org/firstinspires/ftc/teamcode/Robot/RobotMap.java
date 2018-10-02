@@ -21,8 +21,7 @@ public class RobotMap {
 
     public static class Servo{
         public static final String
-            kicker = "kicker",
-            throttler = "throttler",
+            pivot = "pivot",
             joint = "joint",
             claw = "claw";
     }
