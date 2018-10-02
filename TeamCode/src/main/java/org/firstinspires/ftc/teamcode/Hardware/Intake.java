@@ -12,7 +12,7 @@ import org.firstinspires.ftc.teamcode.Robot.RobotMap;
 public class Intake {
     DcMotor linear;
     DcMotor rotation;
-    DcMotor Intake
+    DcMotor intake;
 
     LinearOpMode opMode;
     private double linearPower;
@@ -23,21 +23,38 @@ public class Intake {
         this.opMode = opMode;
         linear = opMode.hardwareMap.dcMotor.get(RobotMap.DcMotor.linearIntake);
         rotation = opMode.hardwareMap.dcMotor.get(RobotMap.DcMotor.rotationIntake);
-        Intake = opMode.hardwareMap.dcMotor.get(RobotMap.DcMotor.intakeMotor);
+        intake = opMode.hardwareMap.dcMotor.get(RobotMap.DcMotor.intakeMotor);
 
     }
 
-    public void in(double power){
+    public void extend(double power){
         if (linearPower < .8){
             linearPower = (scalePower(power));
+        }
+        else{
+            linearPower = 0.8;
+        }
+        linear.setPower(linearPower);
+    }
+    public void in(double power){
+        if (intakePower< .8){
+            intakePower = (scalePower(power));
+        }
+        else{
+            intakePower = 0.8;
+        }
+        intake.setPower(intakePower);
+    }
+    }
+
+    public void rotate(double power){
+        if (rotationPower < .8){
             rotationPower = (scalePower(power));
         }
         else{
-            leftPower = 0.8;
-            rightPower = 0.8;
+            rotationPower = 0.8;
         }
-        hugleft.setPower(leftPower);
-        hugright.setPower(-rightPower);
+        rotation.setPower(rotationPower);
     }
 
     private double scalePower(double dVal) {
@@ -45,13 +62,13 @@ public class Intake {
     }
 
     public void out(){
-        hugleft.setPower(-.8);
-        hugright.setPower(.8);
+        intake.setPower(-.8);
     }
 
     public void stop(){
-        hugleft.setPower(0);
-        hugright.setPower(0);
+        intake.setPower(0);
+        rotation.setPower(0);
+        linear.setPower(0);
     }
 
 }
