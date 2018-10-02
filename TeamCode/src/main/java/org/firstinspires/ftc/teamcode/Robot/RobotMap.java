@@ -13,8 +13,9 @@ public class RobotMap {
             rightFrontMotor = "motor21",
             leftBackMotor = "motor12",
             rightBackMotor = "motor22",
-            leftIntake = "leftIn",
-            rightIntake = "rightIn",
+            linearIntake = "linearIn",
+            rotationIntake = "rotationIn",
+            intakeMotor = "intakeMotor",
             slide = "slide",
             climber= "climber";
     }

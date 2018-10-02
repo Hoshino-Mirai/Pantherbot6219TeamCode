@@ -10,23 +10,27 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import org.firstinspires.ftc.teamcode.Robot.RobotMap;
 
 public class Intake {
-    DcMotor hugleft;
-    DcMotor hugright;
+    DcMotor linear;
+    DcMotor rotation;
+    DcMotor Intake
 
     LinearOpMode opMode;
-    private double rightPower;
-    private double leftPower;
+    private double linearPower;
+    private double rotationPower;
+    private double intakePower;
 
     public Intake (LinearOpMode opMode) {
         this.opMode = opMode;
-        hugleft = opMode.hardwareMap.dcMotor.get(RobotMap.DcMotor.leftIntake);
-        hugright = opMode.hardwareMap.dcMotor.get(RobotMap.DcMotor.rightIntake);
+        linear = opMode.hardwareMap.dcMotor.get(RobotMap.DcMotor.linearIntake);
+        rotation = opMode.hardwareMap.dcMotor.get(RobotMap.DcMotor.rotationIntake);
+        Intake = opMode.hardwareMap.dcMotor.get(RobotMap.DcMotor.intakeMotor);
+
     }
 
     public void in(double power){
-        if (leftPower < .8){
-            leftPower = (scalePower(power));
-            rightPower = (scalePower(power));
+        if (linearPower < .8){
+            linearPower = (scalePower(power));
+            rotationPower = (scalePower(power));
         }
         else{
             leftPower = 0.8;
